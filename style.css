@@ -31,6 +31,7 @@ hr{
 body{
     background-color: #0b0e20;
     width: 100%;
+    padding: 0;
     overflow-x: hidden;
 }
 .emoji{
@@ -142,8 +143,6 @@ nav div{
         /* Styling about section */
 
 #about{
-    display: grid;
-    align-items: center;
 }
 .about-me{
     width: 550px;
@@ -361,8 +360,17 @@ textarea{
             1025px — 1200px: Desktops, large screens
             1201px and more —  Extra large screens, TV */
 
+/* @media only screen and(min-width: 300px){
+    body{
+        scale: 0.8;
+    }
+} */
+
 @media only screen and (max-width: 480px){
 
+    #menu{
+        display: none;
+    }
     .header-content{
         flex-direction: column;
         align-items: center;
@@ -370,8 +378,10 @@ textarea{
     .pic{
         width: 300px;
     }
-    .description{
+    .description {
         text-align: center;
+        scale: 0.75;
+        margin: 0;
     }
     #portfolio{
         display: none;
@@ -388,20 +398,37 @@ textarea{
         gap: 2rem;
     }
     .input-box{
-        flex-direction: column;
-        
+        flex-direction: column;     
+    }
+    textarea{
+        height: 100px;
     }
     #contact-form{
         width: 80%;
     }
     .input-box input{
         width: 100%;
+        padding: 15px;
     }
     .footer-content{
         flex-direction: column;
     }
     .footer-icon{
         margin-top: 2rem;
+    }
+    #contact{
+        margin-top: 5rem;
+    }
+    section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav .btn{
+        display: none;
+    }
+    .menu-bar-ico{
+        display: block;
     }
 
 }

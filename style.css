@@ -77,6 +77,9 @@ nav ul li a{
     font-weight: 600;
     font-size: 15px;
 }
+.menu-bar-ico{
+    display: none;
+}
 a{
     color: var(--text-color--);
 }
@@ -141,9 +144,9 @@ nav div{
 }
 
         /* Styling about section */
-
+/* 
 #about{
-}
+} */
 .about-me{
     width: 550px;
     text-align: center;

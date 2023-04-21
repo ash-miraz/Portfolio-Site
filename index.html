@@ -15,17 +15,18 @@
 
 
 <!--------------------------Header Section------------------->
-    <header id="header">
+    <header id="header" class="container">
         <nav>
             <img class="logo" src="https://drive.google.com/uc?export=view&id=1MuKRfkVzevKzVXUrr5EUTu_JBgO5-y6g">
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <i style="color:aliceblue" class="fa-solid fa-bars menu-bar-ico"></i>
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-click"><i class="fa-solid fa-bars"></i></label>
+              <ul id="menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
                 <a class="btn" href="https://www.youtube.com/channel/UCF_vIIR2JmkW0eCFr5w3HYQ?sub_confirmation=1" target="_blank"><i class="fa-brands fa-youtube"></i> Subscribe</a>
         </nav>
         <div class="header-content">
@@ -38,6 +39,7 @@
       </div>
             
     </header>
+    
 <!--------------------------About Section------------------->
     <section id="about">
         <div class="card about-me">
@@ -48,7 +50,7 @@
         </div>
     </section>
 <!--------------------------Skills Section------------------->
-    <section id="skills">
+    <section id="skills"  class="container">
         <div class="describing-skills">
             <h2><span style="color: #D41080;">My </span>skills</h2>
             <hr>
@@ -79,13 +81,14 @@
         
     </section>
 <!----------------------Portfolio Section------------------>
-    <section id="portfolio">
+    <section id="portfolio" class="container">
 
-        <h2 style="text-align: center; margin-bottom: 50px;">Recent <span style="color: rgba(255, 17, 148, 0.825);">Works</span></h2>
+        <h2 style="text-align: center;">Recent <span style="color: rgba(255, 17, 148, 0.825);">Works</span></h2>
+        <hr style="margin-bottom: 50px;">
 
-        <div class="portfolio-container">
+        <div class=" portfolio-container">
 
-            <div class="portfolio-box">
+            <div class="portfolio-box box-more">
               <img src="https://drive.google.com/uc?export=view&id=1zKnQZG_3JsBPx0CTvruSoSjpklkyks0W">
               <div class="portfolio-layer">
                 <h4>Recent Work</h4>
@@ -109,7 +112,7 @@
               </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box box-more">
               <img src="https://drive.google.com/uc?export=view&id=1pYe39HG3-_k2VtrGnHm5_v4dJCpgeuw1">
               <div class="portfolio-layer">
                 <h4>Recent Work</h4>
@@ -117,7 +120,7 @@
               </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box box-more">
               <img src="https://drive.google.com/uc?export=view&id=1ByZuthITyctvoTEtdBhZM2rMD927VTUU">
               <div class="portfolio-layer">
                 <h4>Recent Work</h4>
@@ -125,23 +128,25 @@
               </div>
             </div>
 
-            <div class="portfolio-box">
+            <div class="portfolio-box box-more">
               <img src="https://drive.google.com/uc?export=view&id=1aFTPS-8CFMj4CNxbq_cUlNek679oeinh">
               <div class="portfolio-layer">
                 <h4>Recent Work</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, distinctio.</p>
               </div>
             </div>
-      
+            
             
           </div>
+          <a class="more-btn btn">See More</a>
     </section>
 
     <!-------------------------- Contact Section----------------->
 
-    <section id="contact">
+    <section id="contact" class="container">
 
       <h2>Contact <span style="color: #D41080">Me!</span></h2>
+      <hr style=" margin-bottom: 20px;">
 
         <form id="contact-form" action="https://formspree.io/f/mrgvyaqq" method="POST">
           
@@ -154,7 +159,8 @@
             <input type="text" name="Subject" placeholder="Subject (Optional)">
           </div>
           <textarea required name="Messege" placeholder="your messege"></textarea>
-          <input style="border: none; outline: none; padding: 15px 30px; cursor: pointer; margin-top: 10px;" class="btn" type="submit" value="Send">
+          <input style="display: none;" id="send" style="border: none; outline: none; padding: 15px 30px; cursor: pointer; margin-top: 10px;" class="btn" type="submit" value="Send"> 
+          <label class="btn" for="send"><i class="fa-regular fa-paper-plane"></i> Send</label>
 
         </form>
 
@@ -166,7 +172,7 @@
     
     <!------------------------ Footer Area ------------------->
 
-    <footer id="footer">
+    <footer id="footer"  class="container">
 
       <div class="footer-content">
         <p> copyright	&#169; Ashrafuzzaman Miraz | All right reserved.</p>

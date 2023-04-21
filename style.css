@@ -51,7 +51,9 @@ h2, p{
     color: var(--text-color--);
     font-family: 'Chivo', sans-serif;
 }
-
+#more{
+    display: none;
+}
 #header{
     padding: 10px 10% 10%;
     position: relative;
@@ -61,9 +63,11 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .logo{
     width: 100px;
+    height: 100px;
     cursor: pointer;
 }
 nav ul{
@@ -77,7 +81,7 @@ nav ul li a{
     font-weight: 600;
     font-size: 15px;
 }
-.menu-bar-ico{
+#menu-check{
     display: none;
 }
 a{
@@ -213,9 +217,10 @@ nav div{
 }
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 350px 350px 350px;
     align-items: center;
     gap: 2.5rem;
+    justify-content: space-around;
 }
 .portfolio-box{
     height: 200px;
@@ -265,10 +270,6 @@ nav div{
 #contact{
     text-align: center;
 }
-#contact h2{
-    margin-bottom: 50px;
-}
-
 #contact-form{
     width: 49%;
     margin: auto;
@@ -340,6 +341,12 @@ textarea{
     box-shadow: 0 0px 20px #e11d40, 0 0px 10px #e11d40, 0 0 80px -5px #ff0033;
 }
 
+.more-btn{
+    display: none;
+}
+.fa-bars{
+    display: none;
+}
 
 
 
@@ -363,17 +370,51 @@ textarea{
             1025px — 1200px: Desktops, large screens
             1201px and more —  Extra large screens, TV */
 
-/* @media only screen and(min-width: 300px){
-    body{
-        scale: 0.8;
-    }
-} */
 
-@media only screen and (max-width: 480px){
 
-    #menu{
-        display: none;
+@media (max-width: 1200px) {
+    .menu-click{
+        display: block;
+        z-index: 10000;
+    }  
+    nav ul{
+        flex-direction: column;
+        position: fixed;
+        background-color: #00533D;
+        top: 0px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        font-size: 22px;
+        z-index: 1000;
+        overflow: hidden;
     }
+    nav ul li{
+        margin-top: 50px;
+        color: #fff !important;
+    }
+    #menu-check:checked ~ ul{
+        left: 0%;
+    }
+    #menu-check:checked ~ .menu-click i::before{
+        content: "\f00d";
+    }
+    .fa-bars{
+        display: block;
+        color: #fff;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+    width: 100%;
+    }
+    
     .header-content{
         flex-direction: column;
         align-items: center;
@@ -386,8 +427,15 @@ textarea{
         transform: scale(0.75);
         margin: 0;
     }
-    #portfolio{
-        display: none;
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: 350px;
+        align-items: center;
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
+    .box-more{
+       display: none;
     }
     .about-me{
         width: 320px;
@@ -419,9 +467,6 @@ textarea{
     .footer-icon{
         margin-top: 2rem;
     }
-    #contact{
-        margin-top: 5rem;
-    }
     section{
         display: flex;
         align-items: center;
@@ -432,6 +477,41 @@ textarea{
     }
     .menu-bar-ico{
         display: block;
+    }
+    .menu-click{
+        display: block;
+        z-index: 1000;
+    }  
+    nav ul{
+        flex-direction: column;
+        position: fixed;
+        background-color: #00533D;
+        top: 0px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        font-size: 22px;
+        z-index: 1000;
+    }
+    nav ul li{
+        margin-top: 50px;
+        color: #fff !important;
+    }
+    #menu-check:checked ~ ul{
+        left: 0%;
+    }
+    #menu-check:checked ~ .menu-click i::before{
+        content: "\f00d";
+    }
+    .more-btn {
+        display: block;
+        margin-top: 10px;
+    }
+    .fa-bars{
+        display: block;
+        color: #fff;
     }
 
 }

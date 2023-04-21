@@ -365,8 +365,8 @@ textarea{
             /* ---------------Making Responsive------------- */
 
             /* 320px — 480px: Mobile devices
-            481px — 768px: iPads, Tablets
-            769px — 1024px: Small screens, laptops
+            481px — 780px: iPads, Tablets
+            781px — 1024px: Small screens, laptops
             1025px — 1200px: Desktops, large screens
             1201px and more —  Extra large screens, TV */
 
@@ -405,9 +405,39 @@ textarea{
         display: block;
         color: #fff;
     }
+    nav .btn{
+        display: none;
+    }
+    .header-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .description{
+        text-align: center;
+    }
+    .skill-showcase{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .portfolio-container{
+        grid-template-columns: 350px 350px;
+    }
 
 }
 
+
+@media (max-width: 780px){
+    .portfolio-container{
+        grid-template-columns: 420px;
+    }
+    .header-content{
+        transform: scale(0.8);
+    }
+    .about-me{
+        width: 450px;
+    }
+}
 
 
 @media (max-width: 480px) {

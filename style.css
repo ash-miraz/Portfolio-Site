@@ -263,10 +263,10 @@ nav div{
     color: #D41080;
     font-family: 'Chivo', sans-serif;
 }
-.portfolio-box:hover .portfolio-layer{
+/* .portfolio-box:hover .portfolio-layer{
     transform: translateY(00px);
     opacity: 1;
-}
+} */
 
         /*--------------- Contact Section ----------*/
 #contact{

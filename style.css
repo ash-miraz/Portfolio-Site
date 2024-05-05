@@ -184,8 +184,8 @@ nav div{
 #experiences{
     padding: 5% 0px;
 }
-.describing-experiences{
-    width: 500px;
+.describing-experiences {
+    width: 524px;
     margin: 5rem auto;
     text-align: center;
 }
@@ -433,9 +433,6 @@ textarea{
     .portfolio-container{
         grid-template-columns: 420px;
     }
-    .header-content{
-        transform: scale(0.8);
-    }
     .about-me{
         width: 450px;
     }
@@ -466,9 +463,7 @@ textarea{
         gap: 2.5rem;
         justify-content: space-around;
     }
-    .box-more{
-       display: none;
-    }
+    
     .about-me{
         width: 320px;
     }

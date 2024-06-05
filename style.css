@@ -102,6 +102,8 @@ nav div{
     display: inline-block;
     transition: bo 300ms ease-in-out, .5s;
     margin-top: 20px;
+    border: none;
+    cursor: pointer;
 }
 .btn:hover {
     border-top-right-radius: 50px;
@@ -231,6 +233,12 @@ nav div{
     border-radius: 20px;
     position: relative;
 }
+
+.portfolio-box_shorts{
+    height: 480px;
+    width: 270px;
+}
+
 .portfolio-box img,video{
     width: 100%;
     height: 100%;
@@ -263,6 +271,16 @@ nav div{
     color: #D41080;
     font-family: 'Chivo', sans-serif;
 }
+
+.see_more_works{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+}
+
 /* .portfolio-box:hover .portfolio-layer{
     transform: translateY(00px);
     opacity: 1;

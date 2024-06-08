@@ -272,15 +272,14 @@ nav div{
     font-family: 'Chivo', sans-serif;
 }
 
-.see_more_works{
+.see_more_works {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 40%;
     margin: auto;
     margin-top: 50px;
 }
-
 /* .portfolio-box:hover .portfolio-layer{
     transform: translateY(00px);
     opacity: 1;
@@ -367,7 +366,9 @@ textarea{
 .fa-bars{
     display: none;
 }
-
+.br_for_response{
+    display: none;
+}
 
 
 /* ------------------------- Animation */
@@ -431,6 +432,10 @@ textarea{
     .header-content{
         flex-direction: column;
         align-items: center;
+        padding-top: 0 !important;
+    }
+    .pic{
+        margin-top: 0;
     }
     .description{
         text-align: center;
@@ -443,6 +448,18 @@ textarea{
     .portfolio-container{
         grid-template-columns: 350px 350px;
     }
+    .see_more_works{
+        display: block;
+        width: 100%;
+    }
+    .nav_menu{
+        display: none !important;
+    }
+    .majhkhane_nite{
+        display: block;
+        margin: auto;
+    }
+    
 
 }
 
@@ -454,6 +471,7 @@ textarea{
     .about-me{
         width: 450px;
     }
+    
 }
 
 

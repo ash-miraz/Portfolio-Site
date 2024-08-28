@@ -1,0 +1,10 @@
+.long_form_showcase{
+    margin-top: 50px;
+}
+
+.btn_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 110%;
+}
